@@ -36,8 +36,7 @@ export default function Acesso() {
                         />
                     </View>
                     <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
-                        <Text style={styles.message}>   Faça seu cadastro para ficar por
-                            dentro de todas nossas ofertas!</Text>
+                        <Text style={styles.message}>Faça seu cadastro para ficar por dentro de todas nossas ofertas!</Text>
                     </Animatable.View>
                     <Animatable.View animation="fadeInUp" style={styles.containerForm}>
                         <Text style={styles.title}>E-mail</Text>
@@ -91,10 +90,11 @@ const styles = StyleSheet.create({
     },
     message: {
         fontSize: 20,
-        textAlign: 'center',
+      textDecoration: 'justify',
+        alignItems: 'center',
         marginTop: 10,
         color: '#000',
-        paddingHorizontal: 15,
+        paddingHorizontal: 40,
     },
     containerForm: {
         backgroundColor: "#FFF",
